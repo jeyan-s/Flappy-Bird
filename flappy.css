@@ -1,0 +1,70 @@
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;
+    /* background-image: url("https://i.pinimg.com/originals/e5/cc/0a/e5cc0ace6d6c25513cc25a3b8bf20516.gif"); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.Block
+{
+    /* background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Solid-Color-Purple-Background-.jpg"); */
+    margin-top: 0;
+    top: 0;
+    left: -10vw;
+    right: -10vw;
+    margin-left: 110vw;
+    position: absolute;
+    height: 20vh;
+    width: 10vw;
+    background-color: rgb(255, 255, 255);
+    animation: Move 5s;
+    animation-timing-function: linear;
+}
+
+.Ground
+{
+    margin-bottom: 0;
+    left: -10vw;
+    right: -10vw;
+    bottom: 0;
+    margin-left: 110vw;
+    position: absolute;
+    height: 20vh;
+    width: 10vw;
+    background-color: rgb(255, 255, 255);
+    animation: Move 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes Move
+{
+    0% {margin-left: 110vw}
+    100% {margin-left: -10vw}
+}
+
+.Obstacle
+{
+    height: 20vh;
+    width: 10vw;
+    background-color: black;
+}
+
+.Cube
+{
+    height: 16.5vh;
+    width: 8vw;
+    background-color: aqua;
+    margin-top: 45vh;
+    margin-left: 25vh;
+    /* animation: KeepDown 3s;
+    animation-timing-function: linear; */
+}
+
+@keyframes KeepDown
+{
+    0% {margin-top: 45vh;}
+    100% {margin-top: 100vh;}
+}
